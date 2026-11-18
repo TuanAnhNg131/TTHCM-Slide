@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tư tưởng Hồ Chí Minh về văn hóa | Đề tài Câu 10 - UNETI</title>
+  <link rel="stylesheet" href="styles_v2.css" />
+</head>
+<body>
+
+  <!-- ==================== CINEMATIC BACKGROUND & EXTRA ANIMATIONS ==================== -->
+  <div class="cinematic-stage"></div>
+  <div class="stage-sunburst" aria-hidden="true"></div>
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Flying Golden Lac Birds Across Background -->
+  <div class="lac-bird-flock" aria-hidden="true">
+    <svg class="lac-bird b1" viewBox="0 0 120 60" fill="none">
+      <path d="M10 32C34 10 56 16 74 28C88 16 102 10 116 6C104 22 94 30 82 34C96 38 106 44 114 52C94 46 78 42 64 38C44 42 26 40 10 32Z" fill="currentColor"/>
+    </svg>
+    <svg class="lac-bird b2" viewBox="0 0 120 60" fill="none">
+      <path d="M10 32C34 10 56 16 74 28C88 16 102 10 116 6C104 22 94 30 82 34C96 38 106 44 114 52C94 46 78 42 64 38C44 42 26 40 10 32Z" fill="currentColor"/>
+    </svg>
+    <svg class="lac-bird b3" viewBox="0 0 120 60" fill="none">
+      <path d="M10 32C34 10 56 16 74 28C88 16 102 10 116 6C104 22 94 30 82 34C96 38 106 44 114 52C94 46 78 42 64 38C44 42 26 40 10 32Z" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <!-- Swaying Traditional Lantern Ornaments -->
+  <svg class="hanging-lantern left" viewBox="0 0 60 110" fill="none" aria-hidden="true">
+    <line x1="30" y1="0" x2="30" y2="20" stroke="#f5c84c" stroke-width="2"/>
+    <rect x="20" y="18" width="20" height="6" rx="2" fill="#f5c84c"/>
+    <ellipse cx="30" cy="46" rx="22" ry="24" fill="#c9181e" stroke="#f5c84c" stroke-width="2"/>
+    <path d="M30 22C20 34 20 58 30 70M30 22C40 34 40 58 30 70" stroke="#f5c84c" stroke-width="1.2" opacity="0.7"/>
+    <rect x="20" y="68" width="20" height="6" rx="2" fill="#f5c84c"/>
+    <path d="M26 74V102M30 74V106M34 74V102" stroke="#ffe484" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+
+  <svg class="hanging-lantern right" viewBox="0 0 60 110" fill="none" aria-hidden="true">
+    <line x1="30" y1="0" x2="30" y2="20" stroke="#f5c84c" stroke-width="2"/>
+    <rect x="20" y="18" width="20" height="6" rx="2" fill="#f5c84c"/>
+    <ellipse cx="30" cy="46" rx="22" ry="24" fill="#c9181e" stroke="#f5c84c" stroke-width="2"/>
+    <path d="M30 22C20 34 20 58 30 70M30 22C40 34 40 58 30 70" stroke="#f5c84c" stroke-width="1.2" opacity="0.7"/>
+    <rect x="20" y="68" width="20" height="6" rx="2" fill="#f5c84c"/>
+    <path d="M26 74V102M30 74V106M34 74V102" stroke="#ffe484" stroke-width="2" stroke-linecap="round"/>
+  </svg>
+
+  <!-- Flowing Golden Silk Waves at Bottom -->
+  <svg class="silk-waves" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+    <path class="silk-wave-path" d="M0,80 C320,140 620,10 960,80 C1200,130 1350,50 1440,70 L1440,140 L0,140 Z" fill="rgba(245, 200, 76, 0.14)"/>
+    <path class="silk-wave-path w2" d="M0,95 C380,20 740,135 1120,65 C1280,35 1380,90 1440,85 L1440,140 L0,140 Z" fill="rgba(255, 228, 132, 0.1)"/>
+  </svg>
+
+  <!-- Classic Gold Border Frame -->
+  <div class="classic-frame" aria-hidden="true">
+    <svg class="corner-ornament tl" viewBox="0 0 60 60" fill="none">
+      <path d="M2 58V12C2 6.477 6.477 2 12 2H58" stroke="currentColor" stroke-width="3"/>
+      <path d="M10 46V14H46" stroke="currentColor" stroke-width="1.8"/>
+      <rect x="14" y="14" width="10" height="10" stroke="currentColor" stroke-width="1.8"/>
+    </svg>
+    <svg class="corner-ornament tr" viewBox="0 0 60 60" fill="none">
+      <path d="M2 58V12C2 6.477 6.477 2 12 2H58" stroke="currentColor" stroke-width="3"/>
+      <path d="M10 46V14H46" stroke="currentColor" stroke-width="1.8"/>
+      <rect x="14" y="14" width="10" height="10" stroke="currentColor" stroke-width="1.8"/>
+    </svg>
+    <svg class="corner-ornament bl" viewBox="0 0 60 60" fill="none">
+      <path d="M2 58V12C2 6.477 6.477 2 12 2H58" stroke="currentColor" stroke-width="3"/>
+      <path d="M10 46V14H46" stroke="currentColor" stroke-width="1.8"/>
+      <rect x="14" y="14" width="10" height="10" stroke="currentColor" stroke-width="1.8"/>
+    </svg>
+    <svg class="corner-ornament br" viewBox="0 0 60 60" fill="none">
+      <path d="M2 58V12C2 6.477 6.477 2 12 2H58" stroke="currentColor" stroke-width="3"/>
+      <path d="M10 46V14H46" stroke="currentColor" stroke-width="1.8"/>
+      <rect x="14" y="14" width="10" height="10" stroke="currentColor" stroke-width="1.8"/>
+    </svg>
+  </div>
+
+  <!-- Parallax Layer 1: Dong Son Bronze Drum -->
+  <div class="parallax-layer symbol-dongson" id="parallax-dongson" aria-hidden="true">
+    <svg viewBox="0 0 300 300" fill="none">
+      <circle cx="150" cy="150" r="142" stroke="currentColor" stroke-width="2" stroke-dasharray="6 6"/>
+      <circle cx="150" cy="150" r="118" stroke="currentColor" stroke-width="1.5"/>
+      <circle cx="150" cy="150" r="88" stroke="currentColor" stroke-width="2" stroke-dasharray="12 4"/>
+      <circle cx="150" cy="150" r="54" stroke="currentColor" stroke-width="1.5"/>
+      <polygon points="150,98 158,134 187,113 166,142 202,150 166,158 187,187 158,166 150,202 142,166 113,187 134,158 98,150 134,142 113,113 142,134" fill="currentColor"/>
+    </svg>
+  </div>
+
+  <!-- Parallax Layer 2: Lotus Blossoms -->
+  <div class="parallax-layer symbol-lotus-left" id="parallax-lotus-left" aria-hidden="true">
+    <svg viewBox="0 0 200 130" fill="none">
+      <path d="M100 18C84 48 76 78 100 112C124 78 116 48 100 18Z" stroke="currentColor" stroke-width="2.2" fill="currentColor" fill-opacity="0.18"/>
+      <path d="M100 112C68 92 48 64 56 34C78 52 92 78 100 112Z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.12"/>
+      <path d="M100 112C132 92 152 64 144 34C122 52 108 78 100 112Z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.12"/>
+      <path d="M100 112C54 106 24 88 18 62C48 68 76 86 100 112Z" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M100 112C146 106 176 88 182 62C152 68 124 86 100 112Z" stroke="currentColor" stroke-width="1.8"/>
+    </svg>
+  </div>
+
+  <div class="parallax-layer symbol-lotus-right" id="parallax-lotus-right" aria-hidden="true">
+    <svg viewBox="0 0 200 130" fill="none">
+      <path d="M100 18C84 48 76 78 100 112C124 78 116 48 100 18Z" stroke="currentColor" stroke-width="2.2" fill="currentColor" fill-opacity="0.18"/>
+      <path d="M100 112C68 92 48 64 56 34C78 52 92 78 100 112Z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.12"/>
+      <path d="M100 112C132 92 152 64 144 34C122 52 108 78 100 112Z" stroke="currentColor" stroke-width="2" fill="currentColor" fill-opacity="0.12"/>
+      <path d="M100 112C54 106 24 88 18 62C48 68 76 86 100 112Z" stroke="currentColor" stroke-width="1.8"/>
+      <path d="M100 112C146 106 176 88 182 62C152 68 124 86 100 112Z" stroke="currentColor" stroke-width="1.8"/>
+    </svg>
+  </div>
+
+  <!-- Parallax Layer 3: Peace Doves -->
+  <div class="parallax-layer symbol-dove-left" id="parallax-dove-left" aria-hidden="true">
+    <svg viewBox="0 0 180 140" fill="none">
+      <path class="wing-anim" d="M88 74C72 48 45 24 18 14C28 36 42 54 64 72L88 74Z" fill="#e5d5b5"/>
+      <path d="M60 82C74 72 102 68 124 72C136 74 146 66 154 64C159 63 163 67 160 72C155 81 142 89 124 94C99 101 76 96 60 82Z" fill="#ffffff" stroke="#d4a437" stroke-width="1.5"/>
+      <path class="wing-anim" d="M104 75C94 42 74 16 44 6C49 29 58 53 79 76L104 75Z" fill="#ffffff" stroke="#d4a437" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <div class="parallax-layer symbol-dove-right" id="parallax-dove-right" aria-hidden="true">
+    <svg viewBox="0 0 180 140" fill="none" style="transform: scaleX(-1);">
+      <path class="wing-anim" d="M88 74C72 48 45 24 18 14C28 36 42 54 64 72L88 74Z" fill="#e5d5b5"/>
+      <path d="M60 82C74 72 102 68 124 72C136 74 146 66 154 64C159 63 163 67 160 72C155 81 142 89 124 94C99 101 76 96 60 82Z" fill="#ffffff" stroke="#d4a437" stroke-width="1.5"/>
+      <path class="wing-anim" d="M104 75C94 42 74 16 44 6C49 29 58 53 79 76L104 75Z" fill="#ffffff" stroke="#d4a437" stroke-width="1.5"/>
+    </svg>
+  </div>
+
+  <!-- ==================== TOP CINEMATIC SCROLL TIMELINE ==================== -->
+  <nav class="cinematic-timeline" aria-label="Dòng thời gian thuyết trình">
+    <button class="timeline-node is-active" data-target-chapter="intro" data-slide-index="0">
+      <span class="dot"></span><span>Mở đầu &amp; Nhóm</span>
+    </button>
+    <div class="timeline-connector"></div>
+    <button class="timeline-node" data-target-chapter="part1" data-slide-index="2">
+      <span class="dot"></span><span>I. Định nghĩa 8/1943</span>
+    </button>
+    <div class="timeline-connector"></div>
+    <button class="timeline-node" data-target-chapter="part2" data-slide-index="5">
+      <span class="dot"></span><span>II. Quan hệ &amp; Vai trò</span>
+    </button>
+    <div class="timeline-connector"></div>
+    <button class="timeline-node" data-target-chapter="part3" data-slide-index="8">
+      <span class="dot"></span><span>III. Văn hóa hiện nay</span>
+    </button>
+    <div class="timeline-connector"></div>
+    <button class="timeline-node" data-target-chapter="part4" data-slide-index="12">
+      <span class="dot"></span><span>IV. Sinh viên &amp; Kết</span>
+    </button>
+  </nav>
+
+  <!-- ==================== SLIDE DECK (15 SLIDES) ==================== -->
+  <main class="deck-stage">
+
+    <!-- ==================== SLIDE 1: MONUMENTAL COVER (SHIMMER GOLD & HALO EFFECT, NO 3D TILT) ==================== -->
+    <section class="slide is-active" data-chapter="intro" data-transition="zoom">
+      <div class="slide-container">
+        <div class="cover-grand-stage">
+          <div class="cover-halo-ring" aria-hidden="true"></div>
+
+          <!-- University Banner -->
+          <div class="uneti-header-pill reveal r1">
+            <span class="uneti-school-name">🏛️ Trường Đại học Kinh tế - Kỹ thuật Công nghiệp (UNETI)</span>
+            <span class="uneti-faculty-name">Khoa Lý luận Chính trị · Học phần: Tư tưởng Hồ Chí Minh</span>
+          </div>
+
+          <!-- 3D Metallic Gold Party Emblem + 3D Faceted Gold Star -->
+          <div class="emblem-duo-showcase reveal r2">
+            <div class="emblem-3d-box" title="Biểu tượng Đảng Cộng sản Việt Nam">
+              <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="gold3dMain" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#fff6c2"/>
+                    <stop offset="38%" stop-color="#ffd859"/>
+                    <stop offset="72%" stop-color="#d4981a"/>
+                    <stop offset="100%" stop-color="#8f5d06"/>
+                  </linearGradient>
+                  <linearGradient id="gold3dHighlight" x1="0%" y1="100%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#b87e11"/>
+                    <stop offset="50%" stop-color="#ffe885"/>
+                    <stop offset="100%" stop-color="#ffffff"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="70" cy="70" r="54" fill="rgba(255, 215, 80, 0.18)"/>
+                <g transform="rotate(-42 70 70)">
+                  <rect x="63" y="26" width="14" height="90" rx="4" fill="#8c5a05" transform="translate(2, 3)"/>
+                  <rect x="63" y="26" width="14" height="90" rx="4" fill="url(#gold3dMain)" stroke="#fff2b2" stroke-width="1.2"/>
+                  <path d="M40 20H96L86 38H40V20Z" fill="#8c5a05" transform="translate(2, 3)"/>
+                  <path d="M40 20H96L86 38H40V20Z" fill="url(#gold3dHighlight)" stroke="#fff6c2" stroke-width="1.3"/>
+                </g>
+                <path d="M72 18C104 22 122 52 114 84C106 112 74 124 44 110L30 124L20 114L36 98C26 88 22 76 24 66C30 88 54 102 78 96C98 90 106 66 96 44C90 30 80 22 72 18Z" fill="#7a4c03" transform="translate(2, 3)"/>
+                <path d="M72 18C104 22 122 52 114 84C106 112 74 124 44 110L30 124L20 114L36 98C26 88 22 76 24 66C30 88 54 102 78 96C98 90 106 66 96 44C90 30 80 22 72 18Z" fill="url(#gold3dMain)" stroke="#fff6c2" stroke-width="1.4"/>
+              </svg>
+            </div>
+
+            <div class="emblem-3d-box star-box" title="Ngôi sao vàng năm cánh">
+              <svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="starBright" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff"/>
+                    <stop offset="45%" stop-color="#ffe680"/>
+                    <stop offset="100%" stop-color="#e0a422"/>
+                  </linearGradient>
+                  <linearGradient id="starShade" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#c98b14"/>
+                    <stop offset="100%" stop-color="#7c4e03"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="70" cy="70" r="54" fill="rgba(255, 215, 80, 0.18)"/>
+                <polygon points="70,72 70,10 85,51" fill="url(#starShade)"/>
+                <polygon points="70,72 55,51 70,10" fill="url(#starBright)"/>
+                <polygon points="70,72 85,51 129,51" fill="url(#starBright)"/>
+                <polygon points="70,72 129,51 94,79" fill="url(#starShade)"/>
+                <polygon points="70,72 94,79 107,123" fill="url(#starBright)"/>
+                <polygon points="70,72 107,123 70,96" fill="url(#starShade)"/>
+                <polygon points="70,72 70,96 33,123" fill="url(#starBright)"/>
+                <polygon points="70,72 33,123 46,79" fill="url(#starShade)"/>
+                <polygon points="70,72 46,79 11,51" fill="url(#starShade)"/>
+                <polygon points="70,72 11,51 55,51" fill="url(#starBright)"/>
+                <polygon points="70,10 85,51 129,51 94,79 107,123 70,96 33,123 46,79 11,51 55,51" fill="none" stroke="#fff5bd" stroke-width="1.2"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Redesigned Monumental Title with Liquid Gold Shimmer -->
+          <h1 class="cover-title-block reveal r3">
+            <span class="cover-title-line1">TƯ TƯỞNG HỒ CHÍ MINH</span>
+            <span class="cover-title-line2">VỀ VĂN HÓA</span>
+          </h1>
+
+          <div class="cover-ornament-divider reveal r4">✦ ❖ ✦</div>
+
+          <p class="cover-hero-subtitle reveal r4">
+            Định nghĩa tháng 8/1943, mối quan hệ, vai trò và xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc
+          </p>
+
+          <!-- Bottom Metadata Ribbon -->
+          <div class="cover-bottom-ribbon reveal r5">
+            <span>📌 Chủ đề: <strong>Câu 10</strong></span>
+            <span>•</span>
+            <span>👩‍🏫 Giảng viên hướng dẫn: <strong>ThS. Lê Thị Lý</strong></span>
+            <span>•</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 2: TOPIC INFO & 9 TEAM MEMBER NAMES ONLY ==================== -->
+    <section class="slide" data-chapter="intro" data-transition="slide">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Thông tin chung &amp; Thành viên thực hiện</div>
+            <h2 class="main-heading">Đề tài thuyết trình và thành viên nhóm</h2>
+          </div>
+          <div class="page-index-ornament">02</div>
+        </div>
+
+        <div class="slide2-layout">
+          <!-- Left: Question 10 & Course Info -->
+          <div class="tilt-card card-crimson reveal r2">
+            <div class="tilt-content">
+              <div class="card-h">📜 Nội dung đề tài (Câu 10)</div>
+              <p class="card-p" style="margin-bottom: 14px; font-style: italic;">
+                “Tháng 8/1943, Hồ Chí Minh đã định nghĩa như thế nào về văn hóa? Hồ Chí Minh có quan điểm như thế nào về mối quan hệ giữa văn hóa với các lĩnh vực khác và vai trò của văn hóa? Liên hệ xây dựng văn hóa tiên tiến, đậm đà bản sắc dân tộc Việt Nam hiện nay?”
+              </p>
+              <div class="card-h" style="margin-top: 12px;">🏛️ Thông tin học phần</div>
+              <ul class="oriental-list">
+                <li><strong>Trường:</strong> Đại học Kinh tế - Kỹ thuật Công nghiệp (UNETI)</li>
+                <li><strong>Khoa / Bộ môn:</strong> Lý luận Chính trị</li>
+                <li><strong>Học phần:</strong> Tư tưởng Hồ Chí Minh</li>
+                <li><strong>Giảng viên hướng dẫn:</strong> ThS. Lê Thị Lý</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right: Clean, Elegant 9 Team Member Names Only -->
+          <div class="tilt-card reveal r3">
+            <div class="tilt-content">
+              <div class="card-h">👥 Thành viên nhóm thực hiện</div>
+              <div class="member-grid-clean">
+                <div class="member-name-card">
+                  <span class="member-badge-num">01</span>
+                  <span class="member-full-name">Tạ Phương Thảo</span>
+                </div>
+                <div class="member-name-card">
+                  <span class="member-badge-num">02</span>
+                  <span class="member-full-name">Nguyễn Thị Thu Trang</span>
+                </div>
+                <div class="member-name-card">
+                  <span class="member-badge-num">03</span>
+                  <span class="member-full-name">Đinh Thị Hồng Như</span>
+                </div>
+                <div class="member-name-card">
+                  <span class="member-badge-num">04</span>
+                  <span class="member-full-name">Lê Kim Thái Linh</span>
+                </div>
+                <div class="member-name-card">
+                  <span class="member-badge-num">05</span>
+                  <span class="member-full-name">Nguyễn Tuấn Anh</span>
+                </div>
+                <div class="member-name-card">
+                  <span class="member-badge-num">06</span>
+                  <span class="member-full-name">Uông Duy Anh</span>
+                </div>
+                <div class="member-name-card">
+                  <span class="member-badge-num">07</span>
+                  <span class="member-full-name">Vương Đình Duy</span>
+                </div>
+                <div class="member-name-card">
+                  <span class="member-badge-num">08</span>
+                  <span class="member-full-name">Phạm Minh Anh</span>
+                </div>
+                <div class="member-name-card">
+                  <span class="member-badge-num">09</span>
+                  <span class="member-full-name">Ông Tiến Nam</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 3: PHẦN I.1 - BỐI CẢNH & ĐỊNH NGHĨA ==================== -->
+    <section class="slide" data-chapter="part1" data-transition="flip">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần I · Quan niệm của Hồ Chí Minh về văn hóa</div>
+            <h2 class="main-heading">Bối cảnh và định nghĩa văn hóa tháng 8/1943</h2>
+          </div>
+          <div class="page-index-ornament">03</div>
+        </div>
+
+        <div class="scroll-manuscript-layout">
+          <div class="tilt-card reveal r2">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">1.1</span><span>Bối cảnh lịch sử</span></div>
+              <ul class="oriental-list">
+                <li><strong>Tháng 8/1943:</strong> Trong thời gian bị chính quyền Tưởng Giới Thạch bắt giam tại Trung Quốc, Hồ Chí Minh vẫn tiếp tục suy nghĩ, nghiên cứu về những vấn đề của cách mạng và đời sống xã hội.</li>
+                <li><strong>Nhận thức sâu sắc:</strong> Người đã đưa ra quan niệm về văn hóa với nội hàm rộng, thể hiện nhận thức toàn diện về nguồn gốc, bản chất và mục đích của văn hóa.</li>
+                <li><strong>Tư liệu lịch sử:</strong> Được thể hiện ở phần cuối bản thảo tập <em>Nhật ký trong tù</em> (năm 1943).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="imperial-scroll tilt-card reveal r3">
+            <div class="tilt-content">
+              <div class="card-h" style="color: #ffe484;"><span class="num-pill">1.2</span><span>Định nghĩa văn hóa của Hồ Chí Minh</span></div>
+              <p class="scroll-quote-text">
+                “Vì lẽ sinh tồn cũng như mục đích của cuộc sống, loài người mới sáng tạo và phát minh ra ngôn ngữ, chữ viết, đạo đức, pháp luật, khoa học, tôn giáo, văn học, nghệ thuật, những công cụ cho sinh hoạt hàng ngày về mặc, ăn, ở và các phương thức sử dụng. Toàn bộ những sáng tạo và phát minh đó tức là văn hóa. Văn hóa là sự tổng hợp của mọi phương thức sinh hoạt cùng với biểu hiện của nó mà loài người đã sản sinh ra nhằm thích ứng những nhu cầu đời sống và đòi hỏi của sự sinh tồn.”
+              </p>
+              <div style="text-align: right; font-weight: 700; color: #ffe484;">
+                — Hồ Chí Minh (Tháng 8/1943) —
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 4: PHẦN I.2 - PHÂN TÍCH 4 PHƯƠNG DIỆN ==================== -->
+    <section class="slide" data-chapter="part1" data-transition="rise">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần I · Quan niệm của Hồ Chí Minh về văn hóa</div>
+            <h2 class="main-heading">Phân tích nội dung định nghĩa theo bốn phương diện</h2>
+          </div>
+          <div class="page-index-ornament">04</div>
+        </div>
+
+        <div class="bento-2x2">
+          <div class="tilt-card reveal r2">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">2.1</span><span>Về nguồn gốc của văn hóa</span></div>
+              <ul class="oriental-list">
+                <li>Bắt nguồn từ <strong>nhu cầu sinh tồn</strong> và mục đích cuộc sống của con người.</li>
+                <li>Trong lao động, sản xuất, giao tiếp và sinh hoạt, con người sáng tạo ra những giá trị để tồn tại và phát triển.</li>
+                <li>Không phải tự nhiên mà có, mà là kết quả của quá trình sáng tạo lâu dài.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card card-crimson reveal r3">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">2.2</span><span>Về nội dung và phạm vi của văn hóa</span></div>
+              <ul class="oriental-list">
+                <li><strong>Giá trị tinh thần:</strong> Ngôn ngữ, chữ viết, đạo đức, pháp luật, khoa học, tôn giáo, văn học, nghệ thuật.</li>
+                <li><strong>Giá trị vật chất:</strong> Công cụ lao động, phương tiện phục vụ nhu cầu ăn, mặc, ở và phương thức sử dụng.</li>
+                <li>Nhìn nhận văn hóa trên phạm vi <strong>toàn bộ đời sống xã hội</strong>.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r4">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">2.3</span><span>Về chủ thể sáng tạo văn hóa</span></div>
+              <ul class="oriental-list">
+                <li><strong>Con người</strong> là chủ thể sáng tạo ra văn hóa.</li>
+                <li>Hình thành từ hoạt động thực tiễn của cá nhân, cộng đồng và toàn xã hội.</li>
+                <li>Các giá trị văn hóa được kế thừa, lưu truyền và phát triển qua nhiều thế hệ.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r5">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">2.4</span><span>Về mục đích và chức năng của văn hóa</span></div>
+              <ul class="oriental-list">
+                <li>Đáp ứng nhu cầu đời sống và đòi hỏi sinh tồn của con người.</li>
+                <li>Giúp con người thích nghi với môi trường tự nhiên và xã hội.</li>
+                <li>Góp phần tổ chức đời sống, điều chỉnh hành vi và thúc đẩy xã hội phát triển.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 5: PHẦN I.3 - Ý NGHĨA ĐỊNH NGHĨA ==================== -->
+    <section class="slide" data-chapter="part1" data-transition="zoom">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần I · Quan niệm của Hồ Chí Minh về văn hóa</div>
+            <h2 class="main-heading">Ý nghĩa của định nghĩa văn hóa</h2>
+          </div>
+          <div class="page-index-ornament">05</div>
+        </div>
+
+        <div class="radial-hub-layout">
+          <div class="hub-col">
+            <div class="tilt-card reveal r2">
+              <div class="tilt-content">
+                <div class="card-h"><span class="num-pill">01</span><span>Tính toàn diện</span></div>
+                <p class="card-p">Văn hóa bao gồm trọn vẹn cả đời sống vật chất và đời sống tinh thần của con người.</p>
+              </div>
+            </div>
+            <div class="tilt-card reveal r3">
+              <div class="tilt-content">
+                <div class="card-h"><span class="num-pill">02</span><span>Tính nhân văn</span></div>
+                <p class="card-p">Lấy con người làm chủ thể sáng tạo và phục vụ nhu cầu phát triển toàn diện của con người.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hub-center-emblem reveal r3">
+            <div style="font-size: 28px; margin-bottom: 4px;">☸</div>
+            <div style="font-weight: 800; font-size: 18px; color: #ffe484;">Bốn giá trị cốt lõi</div>
+            <div style="font-size: 12px; opacity: 0.9; margin-top: 4px;">Định nghĩa tháng 8/1943</div>
+          </div>
+
+          <div class="hub-col">
+            <div class="tilt-card reveal r4">
+              <div class="tilt-content">
+                <div class="card-h"><span class="num-pill">03</span><span>Tính thực tiễn</span></div>
+                <p class="card-p">Văn hóa bắt nguồn từ đời sống thực tế và gắn liền với hoạt động thực tiễn của nhân loại.</p>
+              </div>
+            </div>
+            <div class="tilt-card reveal r5">
+              <div class="tilt-content">
+                <div class="card-h"><span class="num-pill">04</span><span>Tính phát triển</span></div>
+                <p class="card-p">Văn hóa luôn vận động, được kế thừa và sáng tạo để đáp ứng yêu cầu của từng thời đại.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-banner reveal r6">
+          <strong>Chuyển ý sang Phần II:</strong> Từ quan niệm văn hóa là toàn bộ những giá trị do con người sáng tạo ra, Hồ Chí Minh tiếp tục chỉ ra rằng văn hóa không tồn tại biệt lập mà luôn gắn bó mật thiết với các lĩnh vực khác của đời sống xã hội.
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 6: PHẦN II.1 & II.2 - CHÍNH TRỊ & KINH TẾ (WELL-SPACED BADGES) ==================== -->
+    <section class="slide" data-chapter="part2" data-transition="slide">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần II · Mối quan hệ giữa văn hóa với các lĩnh vực khác</div>
+            <h2 class="main-heading">Mối quan hệ giữa văn hóa với chính trị và kinh tế</h2>
+          </div>
+          <div class="page-index-ornament">06</div>
+        </div>
+
+        <div class="dialectic-grid">
+          <div class="tilt-card reveal r2">
+            <div class="tilt-content">
+              <div class="card-h">
+                <span class="num-pill">01</span>
+                <span>Văn hóa với chính trị</span>
+              </div>
+              <ul class="oriental-list">
+                <li><strong>Phục vụ nhiệm vụ chính trị:</strong> Cổ vũ yêu nước, ý chí giải phóng dân tộc khi kháng chiến; xây dựng xã hội mới, con người mới trong thời bình.</li>
+                <li><strong>Chính trị tạo điều kiện và định hướng:</strong> Đường lối đúng đắn, môi trường ổn định giúp văn hóa phát triển theo hướng tiến bộ.</li>
+                <li><strong>Văn hóa tác động trở lại:</strong> Giáo dục tư tưởng, nâng cao ý thức công dân, xây dựng Đảng, Nhà nước và tạo sự đồng thuận xã hội.</li>
+              </ul>
+              <div class="example-box">
+                <strong>Ví dụ:</strong> Trong kháng chiến chống Pháp và chống Mỹ, thơ ca, âm nhạc, báo chí cách mạng đã cổ vũ tinh thần chiến đấu và ý chí độc lập dân tộc.
+              </div>
+            </div>
+          </div>
+
+          <div class="tilt-card card-crimson reveal r3">
+            <div class="tilt-content">
+              <div class="card-h">
+                <span class="num-pill">02</span>
+                <span>Văn hóa với kinh tế</span>
+              </div>
+              <ul class="oriental-list">
+                <li><strong>Kinh tế là cơ sở vật chất:</strong> Tạo nguồn lực đầu tư vào giáo dục, khoa học, nghệ thuật và nâng cao đời sống để nhân dân hưởng thụ văn hóa.</li>
+                <li><strong>Văn hóa thúc đẩy kinh tế:</strong> Giáo dục tri thức, đạo đức, hình thành tác phong làm việc chuyên nghiệp, nâng cao năng suất lao động.</li>
+                <li><strong>Văn hóa kinh doanh:</strong> Tạo dựng uy tín, thương hiệu, niềm tin khách hàng và động lực tăng trưởng mới.</li>
+              </ul>
+              <div class="example-box">
+                <strong>Ví dụ:</strong> Một doanh nghiệp có văn hóa làm việc chuyên nghiệp, coi trọng chữ tín sẽ tạo được niềm tin với khách hàng và phát triển bền vững.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 7: PHẦN II.3 & II.4 - XÃ HỘI & CON NGƯỜI (WELL-SPACED BADGES) ==================== -->
+    <section class="slide" data-chapter="part2" data-transition="flip">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần II · Mối quan hệ giữa văn hóa với các lĩnh vực khác</div>
+            <h2 class="main-heading">Mối quan hệ giữa văn hóa với xã hội và con người</h2>
+          </div>
+          <div class="page-index-ornament">07</div>
+        </div>
+
+        <div class="dialectic-grid">
+          <div class="tilt-card reveal r2">
+            <div class="tilt-content">
+              <div class="card-h">
+                <span class="num-pill">03</span>
+                <span>Văn hóa với xã hội</span>
+              </div>
+              <ul class="oriental-list">
+                <li><strong>Xã hội là môi trường tồn tại:</strong> Văn hóa hình thành trong những điều kiện lịch sử, xã hội nhất định; môi trường ổn định giúp văn hóa lưu truyền.</li>
+                <li><strong>Văn hóa xây dựng xã hội tiến bộ:</strong> Giáo dục con người sống có đạo đức, trách nhiệm và tôn trọng pháp luật.</li>
+                <li>Xây dựng mối quan hệ nhân ái, đoàn kết; hạn chế hành vi tiêu cực, tệ nạn xã hội.</li>
+              </ul>
+              <div class="example-box">
+                <strong>Ví dụ:</strong> Phong trào xây dựng gia đình văn hóa, khu dân cư văn hóa, hoạt động đền ơn đáp nghĩa và thiện nguyện gắn kết cộng đồng.
+              </div>
+            </div>
+          </div>
+
+          <div class="tilt-card card-crimson reveal r3">
+            <div class="tilt-content">
+              <div class="card-h">
+                <span class="num-pill">04</span>
+                <span>Văn hóa với con người</span>
+              </div>
+              <ul class="oriental-list">
+                <li><strong>Nội dung xuyên suốt:</strong> Con người là chủ thể sáng tạo ra các giá trị văn hóa qua lao động, học tập và thực tiễn.</li>
+                <li><strong>Bồi dưỡng nhân cách:</strong> Văn hóa tác động trở lại con người thông qua giáo dục tri thức, đạo đức, lòng yêu nước và khát vọng cống hiến.</li>
+                <li><strong>Mục tiêu kép:</strong> Con người phát triển toàn diện vừa là mục tiêu, vừa là điều kiện để văn hóa tiếp tục phát triển.</li>
+              </ul>
+              <div class="example-box">
+                <strong>Ví dụ:</strong> Giáo dục sinh viên lòng trung thực, tinh thần trách nhiệm, ý thức kỷ luật và lòng nhân ái tạo nên những công dân có ích.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 8: PHẦN II.5 - 5 VAI TRÒ CỦA VĂN HÓA ==================== -->
+    <section class="slide" data-chapter="part2" data-transition="rise">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần II · Vai trò của văn hóa theo tư tưởng Hồ Chí Minh</div>
+            <h2 class="main-heading">Năm vai trò cơ bản của văn hóa</h2>
+          </div>
+          <div class="page-index-ornament">08</div>
+        </div>
+
+        <div class="pillars-5">
+          <div class="tilt-card pillar-card reveal r2">
+            <div class="tilt-content">
+              <div class="pillar-num">1</div>
+              <div class="card-h" style="justify-content:center;">Mục tiêu cách mạng</div>
+              <p class="card-p" style="font-size:12.8px;">Hướng đến cuộc sống tự do, hạnh phúc; nâng cao đời sống tinh thần, tri thức và phẩm giá con người.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card card-crimson pillar-card reveal r3">
+            <div class="tilt-content">
+              <div class="pillar-num">2</div>
+              <div class="card-h" style="justify-content:center;">Là một mặt trận</div>
+              <p class="card-p" style="font-size:12.8px;">Đấu tranh chống tư tưởng lạc hậu, tiêu cực; người hoạt động văn hóa, văn nghệ là chiến sĩ trên mặt trận ấy.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card pillar-card reveal r4">
+            <div class="tilt-content">
+              <div class="pillar-num">3</div>
+              <div class="card-h" style="justify-content:center;">Phục vụ nhân dân</div>
+              <p class="card-p" style="font-size:12.8px;">Xuất phát từ đời sống nhân dân và hướng đến lợi ích của nhân dân; nhân dân vừa sáng tạo vừa thụ hưởng.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card pillar-card reveal r5">
+            <div class="tilt-content">
+              <div class="pillar-num">4</div>
+              <div class="card-h" style="justify-content:center;">Giáo dục đạo đức</div>
+              <p class="card-p" style="font-size:12.8px;">Bồi dưỡng lòng yêu nước, đoàn kết, lối sống lành mạnh; chống chủ nghĩa cá nhân, tham ô, lãng phí.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card pillar-card reveal r6">
+            <div class="tilt-content">
+              <div class="pillar-num">5</div>
+              <div class="card-h" style="justify-content:center;">Giao lưu nhân loại</div>
+              <p class="card-p" style="font-size:12.8px;">Kế thừa giá trị dân tộc, tiếp thu có chọn lọc tinh hoa thế giới; hội nhập nhưng không đánh mất bản sắc.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-banner reveal r6">
+          <strong>Tiểu kết &amp; chuyển ý sang Phần III:</strong> Những quan điểm của Hồ Chí Minh là cơ sở lý luận quan trọng để Việt Nam xây dựng nền văn hóa tiên tiến, đậm đà bản sắc dân tộc trong giai đoạn hiện nay.
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 9: PHẦN III.1 - TIÊN TIẾN & BẢN SẮC ==================== -->
+    <section class="slide" data-chapter="part3" data-transition="zoom">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần III · Liên hệ xây dựng nền văn hóa Việt Nam hiện nay</div>
+            <h2 class="main-heading">Nhận thức về nền văn hóa tiên tiến, đậm đà bản sắc dân tộc</h2>
+          </div>
+          <div class="page-index-ornament">09</div>
+        </div>
+
+        <div class="harmony-layout">
+          <div class="tilt-card reveal r2">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">1.1</span><span>Nền văn hóa tiên tiến</span></div>
+              <p class="card-p" style="margin-bottom:8px;">Hướng đến các giá trị chân – thiện – mỹ, mang tinh thần yêu nước, nhân văn, dân chủ và khoa học:</p>
+              <ul class="oriental-list">
+                <li>Phù hợp với xu thế phát triển của thời đại.</li>
+                <li>Tiếp thu thành tựu tiến bộ của nhân loại.</li>
+                <li>Khuyến khích sáng tạo, đổi mới và phát triển tri thức.</li>
+                <li>Hướng đến sự phát triển toàn diện của con người.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card card-crimson reveal r3">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">1.3</span><span>Quan hệ thống nhất</span></div>
+              <p class="card-p" style="font-size:13.2px;">
+                <strong>Bản sắc dân tộc</strong> tạo nền tảng và đặc trưng riêng; <strong>tính tiên tiến</strong> giúp đổi mới và thích ứng với thời đại.<br /><br />
+                Tiên tiến không phải là từ bỏ truyền thống; giữ bản sắc không phải là bảo thủ, khép kín.
+              </p>
+              <div class="example-box">
+                <strong>Ví dụ:</strong> Âm nhạc Việt Nam ứng dụng công nghệ hiện đại, kết hợp phong cách quốc tế nhưng vẫn sử dụng chất liệu dân ca, nhạc cụ dân tộc và tiếng Việt.
+              </div>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r4">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">1.2</span><span>Đậm đà bản sắc dân tộc</span></div>
+              <p class="card-p" style="margin-bottom:8px;">Kế thừa và phát huy những giá trị đặc trưng trong lịch sử dựng nước và giữ nước:</p>
+              <ul class="oriental-list">
+                <li>Lòng yêu nước, tinh thần độc lập và tự cường.</li>
+                <li>Truyền thống đoàn kết, nhân ái, nghĩa tình.</li>
+                <li>Tinh thần hiếu học, cần cù; uống nước nhớ nguồn, tôn sư trọng đạo.</li>
+                <li>Tiếng Việt, phong tục, nghệ thuật và di sản văn hóa.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 10: PHẦN III.2 - THỰC TRẠNG HIỆN NAY ==================== -->
+    <section class="slide" data-chapter="part3" data-transition="slide">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần III · Liên hệ xây dựng nền văn hóa Việt Nam hiện nay</div>
+            <h2 class="main-heading">Thực trạng xây dựng nền văn hóa Việt Nam hiện nay</h2>
+          </div>
+          <div class="page-index-ornament">10</div>
+        </div>
+
+        <div class="harmony-layout">
+          <div class="tilt-card card-crimson reveal r2">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">2.1</span><span>Những thành tựu đạt được</span></div>
+              <ul class="oriental-list">
+                <li><strong>Nhận thức nâng cao:</strong> Văn hóa là nền tảng tinh thần và nguồn lực phát triển bền vững.</li>
+                <li><strong>Bảo tồn di sản:</strong> Gìn giữ Nhã nhạc cung đình Huế, Dân ca Quan họ Bắc Ninh, Ca trù, lễ hội, làng nghề.</li>
+                <li><strong>Hội nhập quốc tế:</strong> Quảng bá âm nhạc, điện ảnh, thời trang, ẩm thực Việt Nam.</li>
+                <li><strong>Đời sống tinh thần:</strong> Internet và công nghệ số giúp tiếp cận tri thức thuận lợi hơn.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r3">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">2.2</span><span>Những hạn chế và thách thức</span></div>
+              <ul class="oriental-list">
+                <li>Một bộ phận có lối sống thực dụng, ích kỷ, đề cao vật chất.</li>
+                <li>Bạo lực học đường, ứng xử thiếu văn minh nơi công cộng còn tồn tại.</li>
+                <li>Tin giả, thông tin độc hại trên mạng xã hội; sản phẩm chạy theo lượt xem, thiếu nhân văn.</li>
+                <li>Một số lễ hội thương mại hóa; một bộ phận giới trẻ chưa quan tâm lịch sử; chênh lệch thụ hưởng giữa các vùng.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r4">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">2.3</span><span>Nguyên nhân chủ yếu</span></div>
+              <ul class="oriental-list">
+                <li>Tác động mặt trái của kinh tế thị trường và xu hướng đề cao vật chất.</li>
+                <li>Giao thoa giữa nhiều hệ giá trị văn hóa trong hội nhập quốc tế.</li>
+                <li>Ảnh hưởng nhanh chóng của công nghệ số và mạng xã hội.</li>
+                <li>Giáo dục đạo đức ở một số gia đình, nhà trường chưa hiệu quả; ý thức bảo tồn của một bộ phận còn hạn chế.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 11: PHẦN III.3 - 8 GIẢI PHÁP ==================== -->
+    <section class="slide" data-chapter="part3" data-transition="rise">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần III · Hệ thống giải pháp đồng bộ</div>
+            <h2 class="main-heading">Tám giải pháp xây dựng nền văn hóa Việt Nam hiện nay</h2>
+          </div>
+          <div class="page-index-ornament">11</div>
+        </div>
+
+        <div class="roadmap-8">
+          <div class="tilt-card reveal r2">
+            <div class="tilt-content">
+              <span class="step-badge">Giải pháp 01</span>
+              <div class="card-h">Xây dựng con người toàn diện</div>
+              <p class="card-p" style="font-size:12.6px;">Giáo dục yêu nước, đạo đức, tri thức, nhân ái, trung thực; kết hợp gia đình, nhà trường và xã hội.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r2">
+            <div class="tilt-content">
+              <span class="step-badge">Giải pháp 02</span>
+              <div class="card-h">Bảo tồn di sản truyền thống</div>
+              <p class="card-p" style="font-size:12.6px;">Bảo vệ di tích, gìn giữ tiếng Việt, phát huy văn hóa 54 dân tộc; ngăn chặn thương mại hóa di sản.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r3">
+            <div class="tilt-content">
+              <span class="step-badge">Giải pháp 03</span>
+              <div class="card-h">Tiếp thu tinh hoa nhân loại</div>
+              <p class="card-p" style="font-size:12.6px;">Chủ động giao lưu khoa học, giáo dục, nghệ thuật; không chạy theo trào lưu ngoại lai mù quáng.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r3">
+            <div class="tilt-content">
+              <span class="step-badge">Giải pháp 04</span>
+              <div class="card-h">Môi trường văn hóa lành mạnh</div>
+              <p class="card-p" style="font-size:12.6px;">Xây dựng gia đình văn hóa, nhà trường văn minh, tôn trọng pháp luật, phòng chống bạo lực.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card card-crimson reveal r4">
+            <div class="tilt-content">
+              <span class="step-badge">Giải pháp 05</span>
+              <div class="card-h">Văn hóa trên không gian mạng</div>
+              <p class="card-p" style="font-size:12.6px;">Trách nhiệm khi chia sẻ, không lan truyền tin giả, tôn trọng người khác và quảng bá hình ảnh Việt Nam.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r4">
+            <div class="tilt-content">
+              <span class="step-badge">Giải pháp 06</span>
+              <div class="card-h">Gắn với kinh tế và du lịch</div>
+              <p class="card-p" style="font-size:12.6px;">Đầu tư công nghiệp văn hóa (điện ảnh, âm nhạc, thời trang), du lịch di sản bền vững, không đánh đổi bản sắc.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r5">
+            <div class="tilt-content">
+              <span class="step-badge">Giải pháp 07</span>
+              <div class="card-h">Giáo dục lịch sử cho thế hệ trẻ</div>
+              <p class="card-p" style="font-size:12.6px;">Đổi mới dạy học lịch sử, tổ chức trải nghiệm bảo tàng, di tích và hoạt động tình nguyện cộng đồng.</p>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r5">
+            <div class="tilt-content">
+              <span class="step-badge">Giải pháp 08</span>
+              <div class="card-h">Vai trò Nhà nước và xã hội</div>
+              <p class="card-p" style="font-size:12.6px;">Hoàn thiện pháp luật, đầu tư nguồn lực đồng đều giữa các vùng miền, bồi dưỡng tài năng và nghệ nhân.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 12: PHẦN III.4 - CHỦ TRƯƠNG ĐẢNG, NHÀ NƯỚC & VÍ DỤ ==================== -->
+    <section class="slide" data-chapter="part3" data-transition="flip">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần III · Đường lối chính sách và minh chứng thực tế</div>
+            <h2 class="main-heading">Liên hệ chủ trương của Đảng, Nhà nước và ví dụ thực tế</h2>
+          </div>
+          <div class="page-index-ornament">12</div>
+        </div>
+
+        <div class="dialectic-grid">
+          <div class="tilt-card reveal r2">
+            <div class="tilt-content">
+              <div class="card-h">⚖️ Hệ thống văn kiện của Đảng và Nhà nước</div>
+              <ul class="oriental-list">
+                <li><strong>Hiến pháp năm 2013 (Điều 60):</strong> Quy định xây dựng và phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc.</li>
+                <li><strong>Nghị quyết 33-NQ/TW (09/06/2014):</strong> Văn hóa là nền tảng tinh thần, mục tiêu và động lực phát triển bền vững; đặt ngang hàng với kinh tế, chính trị và xã hội.</li>
+                <li><strong>Quyết định 1909/QĐ-TTg (12/11/2021):</strong> Chiến lược phát triển văn hóa đến năm 2030 (con người toàn diện, bảo tồn di sản, công nghiệp văn hóa, ứng dụng công nghệ).</li>
+                <li><strong>Nghị quyết 80-NQ/TW (năm 2026):</strong> Cập nhật định hướng phát triển công nghiệp văn hóa, bảo tồn di sản và văn hóa trong không gian số.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card card-crimson reveal r3">
+            <div class="tilt-content">
+              <div class="card-h">🌸 Ví dụ thực tế bảo vệ di sản và quảng bá đất nước</div>
+              <ul class="oriental-list">
+                <li><strong>Áo dài Việt Nam:</strong> Được quảng bá trang trọng trong các sự kiện văn hóa, lễ hội và du lịch trong nước, quốc tế.</li>
+                <li><strong>Di sản UNESCO ghi danh:</strong> Nghệ thuật <em>Xòe Thái</em> và <em>Ca trù</em> được UNESCO công nhận là di sản văn hóa phi vật thể.</li>
+                <li><strong>Sức trẻ trên nền tảng số:</strong> Các bạn trẻ giới thiệu ẩm thực, trang phục truyền thống và du lịch Việt Nam trên TikTok, YouTube, góp phần quảng bá văn hóa dân tộc đến bạn bè quốc tế.</li>
+              </ul>
+              <div class="example-box">
+                <strong>Tiểu kết Phần III:</strong> Phải kết hợp hài hòa giữa bảo tồn giá trị truyền thống và tiếp thu tinh hoa nhân loại, giữa phát triển kinh tế với phát triển văn hóa và con người.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 13: PHẦN IV - TRÁCH NHIỆM CỦA SINH VIÊN ==================== -->
+    <section class="slide" data-chapter="part4" data-transition="slide">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần IV · Liên hệ thực tiễn thế hệ trẻ</div>
+            <h2 class="main-heading">Liên hệ trách nhiệm của sinh viên (đặc biệt là sinh viên UNETI)</h2>
+          </div>
+          <div class="page-index-ornament">13</div>
+        </div>
+
+        <div class="bento-2x2">
+          <div class="tilt-card reveal r2">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">01</span><span>Trong học tập và rèn luyện</span></div>
+              <ul class="oriental-list">
+                <li>Chủ động tìm hiểu lịch sử, văn hóa và truyền thống dân tộc.</li>
+                <li>Trung thực trong học tập, thi cử; có ý thức tự giác, kỷ luật và trách nhiệm.</li>
+                <li>Không ngừng nâng cao trình độ chuyên môn, ngoại ngữ và kỹ năng công nghệ.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r3">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">02</span><span>Trong giao tiếp và ứng xử</span></div>
+              <ul class="oriental-list">
+                <li>Kính trọng thầy cô, lễ phép với người lớn; đoàn kết, giúp đỡ bạn bè.</li>
+                <li>Tôn trọng sự khác biệt và có thái độ văn minh nơi công cộng.</li>
+                <li>Không có hành vi xúc phạm, phân biệt đối xử và bạo lực học đường.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card card-crimson reveal r4">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">03</span><span>Trong sử dụng mạng xã hội</span></div>
+              <ul class="oriental-list">
+                <li>Có trách nhiệm với thông tin đăng tải và chia sẻ.</li>
+                <li>Không lan truyền tin giả, nội dung độc hại hay chạy theo trào lưu phản cảm.</li>
+                <li>Chủ động quảng bá những giá trị văn hóa tốt đẹp của Việt Nam.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r5">
+            <div class="tilt-content">
+              <div class="card-h"><span class="num-pill">04</span><span>Trong bảo tồn và phát huy bản sắc</span></div>
+              <ul class="oriental-list">
+                <li>Giữ gìn sự trong sáng của tiếng Việt; tìm hiểu phong tục, tập quán dân tộc.</li>
+                <li>Tham gia các hoạt động văn hóa truyền thống và bảo vệ di sản.</li>
+                <li>Quảng bá hình ảnh đất nước, con người Việt Nam đến bạn bè quốc tế.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-banner reveal r6">
+          <strong>Thông điệp:</strong> Sinh viên không chỉ là người tiếp nhận và hưởng thụ văn hóa mà còn là <strong>chủ thể sáng tạo, gìn giữ và phát triển văn hóa</strong> qua mỗi hành động nhỏ hằng ngày.
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 14: PHẦN V - KẾT LUẬN & TÀI LIỆU ==================== -->
+    <section class="slide" data-chapter="part4" data-transition="rise">
+      <div class="slide-container">
+        <div class="slide-top-bar reveal r1">
+          <div>
+            <div class="chapter-label">Phần V · Tổng kết toàn bài và nguồn tham khảo</div>
+            <h2 class="main-heading">Kết luận và tài liệu trích dẫn</h2>
+          </div>
+          <div class="page-index-ornament">14</div>
+        </div>
+
+        <div class="dialectic-grid">
+          <div class="tilt-card card-crimson reveal r2">
+            <div class="tilt-content">
+              <div class="card-h">✦ Nội dung kết luận trọng tâm</div>
+              <ul class="oriental-list">
+                <li><strong>Giá trị định nghĩa 8/1943:</strong> Văn hóa là tổng thể những sáng tạo vật chất và tinh thần do con người tạo ra nhằm đáp ứng nhu cầu đời sống và sự sinh tồn.</li>
+                <li><strong>Vị trí &amp; động lực:</strong> Văn hóa gắn bó mật thiết với chính trị, kinh tế, xã hội và con người; vừa là mục tiêu, vừa là động lực thúc đẩy sự phát triển đất nước.</li>
+                <li><strong>Ý nghĩa thời đại:</strong> Tư tưởng Hồ Chí Minh về văn hóa vẫn còn nguyên giá trị trong công cuộc xây dựng văn hóa Việt Nam hiện nay.</li>
+                <li><strong>Trách nhiệm thế hệ trẻ:</strong> Giữ gìn truyền thống, chủ động tiếp thu tinh hoa nhân loại.</li>
+              </ul>
+              <div class="example-box" style="margin-top:12px; font-weight:700; text-align:center;">
+                Thông điệp: “Hội nhập nhưng không hòa tan, phát triển hiện đại nhưng không đánh mất bản sắc dân tộc.”
+              </div>
+            </div>
+          </div>
+
+          <div class="tilt-card reveal r3">
+            <div class="tilt-content">
+              <div class="card-h">📖 Một số tài liệu, văn bản trích dẫn</div>
+              <ul class="oriental-list">
+                <li><strong>Hồ Chí Minh toàn tập:</strong> Nội dung định nghĩa văn hóa tháng 8/1943 (Tập 3, Nxb. Chính trị quốc gia Sự thật).</li>
+                <li><strong>Hiến pháp năm 2013 (Điều 60):</strong> Quy định về xây dựng và phát triển nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc.</li>
+                <li><strong>Nghị quyết số 33-NQ/TW ngày 09/6/2014:</strong> Về xây dựng và phát triển văn hóa, con người Việt Nam đáp ứng yêu cầu phát triển bền vững đất nước.</li>
+                <li><strong>Quyết định số 1909/QĐ-TTg ngày 12/11/2021:</strong> Về Chiến lược phát triển văn hóa đến năm 2030 &amp; <strong>Nghị quyết 80-NQ/TW (2026)</strong>.</li>
+                <li><strong>Bộ Giáo dục và Đào tạo:</strong> <em>Giáo trình Tư tưởng Hồ Chí Minh</em>, Nxb. Chính trị quốc gia Sự thật.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SLIDE 15: GRAND FINALE (NO 3D TILT, STEADY & IMPRESSIVE) ==================== -->
+    <section class="slide" data-chapter="part4" data-transition="zoom">
+      <div class="slide-container">
+        <div class="finale-stage">
+          <div class="uneti-header-pill reveal r1" style="margin-bottom: 10px;">
+            <span class="uneti-school-name">✨ Trường Đại học Kinh tế - Kỹ thuật Công nghiệp (UNETI) ✨</span>
+          </div>
+
+          <!-- 2 Cute Animated Mascots Side-by-Side -->
+          <div class="mascot-duo-row reveal r2" id="mascot-duo" title="Nhấp vào 2 bé linh vật để bắn pháo hoa cảm ơn!">
+
+            <!-- Mascot 1: Cute Golden Kitten wearing Vietnamese Nón Lá & Red Áo Dài holding Pink Lotus -->
+            <div class="mascot-card-unit m1">
+              <svg class="mascot-svg" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="mascot-heart" d="M42 66C38 60 30 62 30 69C30 76 42 82 42 82C42 82 54 76 54 69C54 62 46 60 42 66Z" fill="#ff5c77"/>
+                <ellipse cx="110" cy="204" rx="56" ry="9" fill="rgba(0, 0, 0, 0.28)"/>
+                <path class="mascot-tail" d="M72 174C46 172 34 150 44 136C52 126 64 138 58 148" stroke="#f4b942" stroke-width="14" stroke-linecap="round"/>
+                <path d="M74 136C74 124 146 124 146 136L154 192C154 196 144 200 110 200C76 200 66 196 66 192L74 136Z" fill="#c9181e" stroke="#ffe484" stroke-width="2.5"/>
+                <circle cx="110" cy="166" r="11" fill="#ffe484"/>
+                <path d="M110 157L113 166L110 175L107 166Z" fill="#8f1418"/>
+                <ellipse cx="74" cy="156" rx="12" ry="10" fill="#fff6e0" stroke="#e0a938" stroke-width="2"/>
+                <path d="M68 156L56 128" stroke="#5ec24e" stroke-width="3" stroke-linecap="round"/>
+                <path d="M56 112C50 120 50 128 56 132C62 128 62 120 56 112Z" fill="#ff7eb3"/>
+                <path d="M56 132C46 128 42 120 46 114C52 118 54 124 56 132Z" fill="#ffa3ca"/>
+                <path d="M56 132C66 128 70 120 66 114C60 118 58 124 56 132Z" fill="#ffa3ca"/>
+                <g class="mascot-paw-wave">
+                  <ellipse cx="152" cy="142" rx="11" ry="14" transform="rotate(25 152 142)" fill="#fff6e0" stroke="#e0a938" stroke-width="2"/>
+                  <circle cx="154" cy="138" r="4" fill="#ffb6c1"/>
+                </g>
+                <polygon points="70,92 62,54 96,74" fill="#f7c968" stroke="#d4982a" stroke-width="2.5"/>
+                <polygon points="72,86 67,62 90,75" fill="#ffb6c1"/>
+                <polygon points="150,92 158,54 124,74" fill="#f7c968" stroke="#d4982a" stroke-width="2.5"/>
+                <polygon points="148,86 153,62 130,75" fill="#ffb6c1"/>
+                <ellipse cx="110" cy="106" rx="44" ry="36" fill="#fff8e8" stroke="#e0a938" stroke-width="2.5"/>
+                <g class="mascot-eyes-blink">
+                  <circle cx="91" cy="106" r="7.5" fill="#2b1810"/>
+                  <circle cx="88.5" cy="103.5" r="2.8" fill="#ffffff"/>
+                  <circle cx="129" cy="106" r="7.5" fill="#2b1810"/>
+                  <circle cx="126.5" cy="103.5" r="2.8" fill="#ffffff"/>
+                </g>
+                <ellipse cx="78" cy="115" rx="6.5" ry="4" fill="#ff8da1" opacity="0.7"/>
+                <ellipse cx="142" cy="115" rx="6.5" ry="4" fill="#ff8da1" opacity="0.7"/>
+                <polygon points="107,112 113,112 110,116" fill="#ff758f"/>
+                <path d="M102 118C105 122 110 120 110 116C110 120 115 122 118 118" stroke="#2b1810" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M46 76L110 26L174 76C145 84 75 84 46 76Z" fill="#f5e2b8" stroke="#c59638" stroke-width="2.5"/>
+                <path d="M68 59C96 64 124 64 152 59" stroke="#d4a84f" stroke-width="1.5"/>
+                <ellipse cx="90" cy="198" rx="11" ry="6" fill="#fff8e8" stroke="#e0a938" stroke-width="2"/>
+                <ellipse cx="130" cy="198" rx="11" ry="6" fill="#fff8e8" stroke="#e0a938" stroke-width="2"/>
+              </svg>
+            </div>
+
+            <!-- Mascot 2: Cute Chibi Corgi Puppy wearing Traditional Khăn Đóng & Royal Blue/Gold Áo Dài waving Vietnam Flag -->
+            <div class="mascot-card-unit m2">
+              <svg class="mascot-svg" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="mascot-heart h2" d="M178 56C175 51 168 52 168 58C168 64 178 69 178 69C178 69 188 64 188 58C188 52 181 51 178 56Z" fill="#ffe484"/>
+                <ellipse cx="110" cy="204" rx="56" ry="9" fill="rgba(0, 0, 0, 0.28)"/>
+                <ellipse class="mascot-tail" cx="156" cy="172" rx="14" ry="11" fill="#f09d38" stroke="#fff6e0" stroke-width="2"/>
+                <path d="M74 136C74 124 146 124 146 136L154 192C154 196 144 200 110 200C76 200 66 196 66 192L74 136Z" fill="#184e9e" stroke="#ffe484" stroke-width="2.5"/>
+                <circle cx="110" cy="164" r="12" fill="#f5c84c" stroke="#fff3c4" stroke-width="1.5"/>
+                <rect x="106" y="160" width="8" height="8" fill="#184e9e"/>
+                <g class="mascot-flag-wave">
+                  <line x1="60" y1="158" x2="36" y2="86" stroke="#ffe484" stroke-width="3.2" stroke-linecap="round"/>
+                  <path d="M36 88C52 82 66 94 82 88L88 114C72 120 58 108 42 114Z" fill="#da251d" stroke="#ffe484" stroke-width="1.2"/>
+                  <polygon points="62,94 64,100 70,100 65,104 67,110 62,106 57,110 59,104 54,100 60,100" fill="#ffff00"/>
+                  <ellipse cx="66" cy="146" rx="11" ry="13" transform="rotate(-20 66 146)" fill="#fff8e8" stroke="#d4882a" stroke-width="2"/>
+                </g>
+                <ellipse cx="148" cy="154" rx="12" ry="10" fill="#fff8e8" stroke="#d4882a" stroke-width="2"/>
+                <path d="M152 152L134 126C148 116 168 122 174 138L152 152Z" fill="#f5c84c" stroke="#8f1418" stroke-width="1.8"/>
+                <polygon points="66,90 50,44 92,70" fill="#f09d38" stroke="#c27416" stroke-width="2.5" stroke-linejoin="round"/>
+                <polygon points="70,84 58,53 86,71" fill="#ffd1b3"/>
+                <polygon points="154,90 170,44 128,70" fill="#f09d38" stroke="#c27416" stroke-width="2.5" stroke-linejoin="round"/>
+                <polygon points="150,84 162,53 134,71" fill="#ffd1b3"/>
+                <ellipse cx="110" cy="106" rx="45" ry="36" fill="#f5a642" stroke="#c27416" stroke-width="2.5"/>
+                <path d="M110 74C98 92 82 104 82 122C82 134 94 140 110 140C126 140 138 134 138 122C138 104 122 92 110 74Z" fill="#fff9ee"/>
+                <path d="M68 78C72 54 148 54 152 78C136 86 84 86 68 78Z" fill="#b8141a" stroke="#ffe484" stroke-width="2.5"/>
+                <path d="M76 68C96 76 124 76 144 68" stroke="#f5c84c" stroke-width="2"/>
+                <g class="mascot-eyes-blink">
+                  <circle cx="90" cy="106" r="7.5" fill="#2b1810"/>
+                  <circle cx="87.5" cy="103.5" r="2.8" fill="#ffffff"/>
+                  <circle cx="130" cy="106" r="7.5" fill="#2b1810"/>
+                  <circle cx="127.5" cy="103.5" r="2.8" fill="#ffffff"/>
+                </g>
+                <ellipse cx="76" cy="116" rx="6.5" ry="4" fill="#ff7b93" opacity="0.75"/>
+                <ellipse cx="144" cy="116" rx="6.5" ry="4" fill="#ff7b93" opacity="0.75"/>
+                <ellipse cx="110" cy="113" rx="6" ry="4.2" fill="#2b1810"/>
+                <path d="M101 119C104 124 110 122 110 118C110 122 116 124 119 119" stroke="#2b1810" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M106 122C106 129 114 129 114 122Z" fill="#ff6b8b"/>
+                <ellipse cx="90" cy="198" rx="11" ry="6" fill="#fff9ee" stroke="#c27416" stroke-width="2"/>
+                <ellipse cx="130" cy="198" rx="11" ry="6" fill="#fff9ee" stroke="#c27416" stroke-width="2"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="mascot-speech reveal r3" id="mascot-speech">
+            “Meow &amp; Gâu~ Nhóm xin cảm ơn Cô Lê Thị Lý và các bạn đã lắng nghe ạ! ❤️”
+          </div>
+
+          <h2 class="finale-title reveal r4">
+            Trân trọng cảm ơn Cô và các bạn!
+          </h2>
+          <p class="card-p reveal r5" style="max-width: 680px; margin: 0 auto;">
+            Nhóm rất mong nhận được những ý kiến nhận xét, góp ý và câu hỏi thảo luận từ Cô và các bạn.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== BOTTOM HUD & CONTROLS ==================== -->
+  <nav class="bottom-hud" aria-label="Thanh công cụ trình chiếu">
+    <button class="hud-btn icon-only" id="btn-prev" title="Trang trước (Mũi tên trái)">←</button>
+    <span class="hud-page-indicator" id="page-indicator">1 / 15</span>
+    <button class="hud-btn icon-only" id="btn-next" title="Trang tiếp (Mũi tên phải / Space)">→</button>
+    <button class="hud-btn" id="btn-audio" title="Bật/Tắt nhạc nền Đàn Tranh &amp; Sáo Trúc sâu lắng, du dương (Phím M)">🔈 Nhạc Du Dương: Tắt</button>
+    <button class="hud-btn" id="btn-theme" title="Đổi giữa tông Đỏ Vàng Hào Quang và Trắng Vàng Cổ Điển">🎨 Tông: Đỏ Vàng Hào Quang</button>
+    <button class="hud-btn icon-only" id="btn-fullscreen" title="Toàn màn hình (Phím F)">⛶</button>
+  </nav>
+
+  <script src="script_v2.js"></script>
+</body>
+</html>
